@@ -34,9 +34,9 @@ class TaskManager:
     def _format_task_display(self, title, data):
         label_colors = {
             "Arbeit": "#fffa5d6",
-            "Uni": "#ffd6ee",
+            "Uni": "#fe8ace",
             "Freizeit": "#c89eef",
-            "Sonstiges": "#ced1f8"
+            "Sonstiges": "#c6c9f6"
         }
         color = label_colors.get(data["label"], "#dddddd")
         label_html = f"<span style='background-color:{color}; padding:2px 8px; border-radius:8px; font-size:12px;'>{data['label']}</span>"
@@ -86,8 +86,8 @@ class TaskManager:
 task_manager = TaskManager()
 
 st.markdown("""
-<h1 style='font-size: 40px; margin-bottom: 0;'> Mission Possible</h1>
-<p style='font-size: 22px; color: gray; margin-top: 0;'>– dein Task Manager</p>
+<h1 style='font-size: 40px; margin-bottom: 0;'>Mission Possible</h1>
+<p style='font-size: 22px; color: gray; margin-top: 0;'>     dein Task Manager</p>
 """, unsafe_allow_html=True)
 
 page = st.sidebar.selectbox("Navigation", [
