@@ -3,7 +3,7 @@ import streamlit as st
 from datetime import date
 
 class TaskManager:
-    def _init_(self):
+    def __init__(self):
         if "tasks" not in st.session_state:
             st.session_state.tasks = {}
 
