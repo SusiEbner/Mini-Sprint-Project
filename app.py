@@ -55,7 +55,7 @@ class TaskManager:
 # Streamlit App
 task_manager = TaskManager()
 
-st.title("📝 Task Manager")
+st.title("🧚AufgabenElf - dein Task Manager")
 
 page = st.sidebar.selectbox("Navigation", [
     "Task anlegen", "Task labeln", "Task löschen", "Task abhaken",
