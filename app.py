@@ -57,7 +57,7 @@ task_manager = TaskManager()
 
 st.markdown("""
 <h1 style='font-size: 40px; margin-bottom: 0;'>🎯 Mission Possible</h1>
-<p style='font-size: 18px; color: gray; margin-top: 0;'> dein Task Manager</p>
+<p style='font-size: 22px; color: white; margin-top: 0;'> dein Task Manager</p>
 """, unsafe_allow_html=True)
 
 page = st.sidebar.selectbox("Navigation", [
