@@ -44,7 +44,7 @@ class TaskManager:
         return f"- {title_html} {label_html}"
 
     def show_today_tasks(self):
-        st.subheader("✨Aufgaben für heute✨")
+        st.subheader("✨Aufgaben für heute")
         today = date.today()
         in_3_days = today + timedelta(days=3)
 
@@ -96,7 +96,7 @@ page = st.sidebar.selectbox("Navigation", [
 ])
 
 if page == "Task anlegen":
-    st.header("✨ Neue Aufgabe anlegen")
+    st.header("✨ Neue Aufgabe anlegen ✨")
     title = st.text_input("Titel der Aufgabe")
     due_date = st.date_input("Fälligkeitsdatum")
     label = st.selectbox("Kategorie", ["Arbeit", "Uni", "Freizeit", "Sonstiges"])
