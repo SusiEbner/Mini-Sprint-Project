@@ -1,8 +1,8 @@
 Wie hat uns SCRUM geholfen?
 SCRUM hat uns bislang nur in begrenztem Maße unterstützt, da wir die meisten Aufgaben gemeinsam und ohne klare Aufgabenteilung bearbeitet haben. Besonders hilfreich war jedoch der Product Backlog, der uns geholfen hat, den Überblick über unsere offenen Aufgaben und nächsten Schritte zu behalten.
 Wie hat uns SCRUM behindert?
-SCRUM hat uns nicht eingeschränkt, da wir alle immer lokal an einem Ort waren und wir gemeinsam gecodet haben.
+SCRUM hat uns in unserem Arbeitsprozess nicht wesentlich eingeschränkt. Da wir alle lokal an einem Ort zusammengearbeitet haben, konnten wir viele Absprachen direkt und informell treffen, ohne auf die formalen Elemente von SCRUM angewiesen zu sein.
 Wo stehen wir gerade?
-Wir haben ein Grundgerüst unseres Task Managers gecodet und mit Streamlit ausgeführt.
+Aktuell haben wir ein Grundgerüst unseres Task Managers implementiert und führen diesen erfolgreich mit Streamlit aus. Die Basisfunktionen stehen und bieten bereits einen ersten Eindruck davon, wie die Anwendung später funktionieren soll.
 Was kommt als nächstens?
-Jetzt sind wir dabei unsere App zu optimieren. Wir versuchen Multipages einzubauen und zusätzliche funktionale und nicht funktionale Anforderungen zu definieren.
+Als nächstes konzentrieren wir uns darauf, unsere App weiter zu optimieren. Wir planen, eine Multipage-Struktur zu integrieren, um die Benutzerführung zu verbessern, und zusätzliche funktionale Anforderungen zu definieren, um den Nutzen und Funktionsumfang der Anwendung zu erweitern.
