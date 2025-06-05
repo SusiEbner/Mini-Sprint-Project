@@ -1,13 +1,13 @@
 import streamlit as st
 
-st.title("🗑️ Task löschen")
-
 if "tasks" not in st.session_state:
     st.session_state.tasks = {}
 
-def delete_task(self, title):
+st.title("ToDo abhacken")
+
+def mark_done(self, title):
     if title in st.session_state.tasks:
-        del st.session_state.tasks[title]
-        st.success(f"🗑 Aufgabe '{title}' wurde gelöscht.")
+        st.session_state.tasks[title]["done"] = True
+        st.success(f"✨ Aufgabe '{title}' wurde als erledigt markiert.")
     else:
         st.warning(f"Aufgabe '{title}' nicht gefunden!")

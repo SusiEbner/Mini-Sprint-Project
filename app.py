@@ -5,6 +5,7 @@ class TaskManager:
     def __init__(self):
         if "tasks" not in st.session_state:
             st.session_state.tasks = {}
+            # session state is used to persist tasks across interactions
 
     def add_task(self, title, due_date, label):
         st.session_state.tasks[title] = {"date": due_date, "label": label, "done": False}

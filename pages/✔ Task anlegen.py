@@ -1,6 +1,9 @@
 import streamlit as st
+
+if "tasks" not in st.session_state:
+    st.session_state.tasks = {}
+
 st.title("Todo anlegen ")
-st.sidebar.success("")
 
 def add_task(self, title, due_date, label):
     st.session_state.tasks[title] = {"date": due_date, "label": label, "done": False}
