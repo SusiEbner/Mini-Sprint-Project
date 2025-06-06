@@ -1,7 +1,10 @@
 import streamlit as st
 import pandas as pd
+
+from utils import load_tasks, save_tasks
+
 if "tasks" not in st.session_state:
-    st.session_state['tasks'] = {}
+    st.session_state['tasks'] = load_tasks()
 
 st.title("Todo anlegen")
 
@@ -10,12 +13,16 @@ task_label = st.selectbox("Label", ["UNI", "Arbeit", "Freizeit", "Sonstiges"], k
 task_due = st.date_input("Fälligkeitsdatum", key="task_due")
 
 if st.button("Aufgabe hinzufügen"):
-    if task_name:
+    if task_name not in st.session_state['tasks']:
         st.session_state['tasks'][task_name] = {
             'Beschreibung': task_name,
             'Label': task_label,
-            'Fälligkeitsdatum': task_due
+            'Fälligkeitsdatum': task_due.isoformat(),
+            'done': False
         }
+        save_tasks(st.session_state['tasks'])
         st.success(f"Aufgabe '{task_name}' hinzugefügt!")
     else:
-        st.error("Bitte gib einen Aufgabenname ein.")
+        st.warning("Diese Aufgabe existiert bereits.")
+else:
+    st.error("Bitte gib einen Aufgabenname ein.")
