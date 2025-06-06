@@ -5,7 +5,7 @@ if "tasks" not in st.session_state:
 
 st.title("ToDo abhacken")
 
-def mark_done(self, title):
+def mark_done(title):
     if title in st.session_state.tasks:
         st.session_state.tasks[title]["done"] = True
         st.success(f"✨ Aufgabe '{title}' wurde als erledigt markiert.")
