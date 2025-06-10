@@ -93,5 +93,8 @@ st.markdown("""
 <p style='font-size: 22px; color: gray; margin-top: 0; text-align: center;'>
     Dein Task Manager
 </p>
+<p style='font-size: 16px; color: gray; margin-top: 4px; text-align: center;'>
+    Links kannst du zwischen verschiedenen Funktionen wählen, um deine Tasks zu verwalten.
+</p>
 """, unsafe_allow_html=True)
 
