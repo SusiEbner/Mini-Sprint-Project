@@ -1,8 +1,16 @@
 {
+<<<<<<< HEAD
   "kochen": {
     "Beschreibung": "kochen",
     "Label": "Freizeit",
     "F\u00e4lligkeitsdatum": "2025-06-10",
     "done": false
+=======
+  "einkaufen": {
+    "Beschreibung": "einkaufen",
+    "Label": "UNI",
+    "F\u00e4lligkeitsdatum": "2025-06-10",
+    "done": true
+>>>>>>> bec716b (update 10)
   }
 }
