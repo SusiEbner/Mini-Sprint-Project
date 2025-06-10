@@ -91,10 +91,7 @@ st.markdown("""
 <p style='font-size: 22px; color: gray; margin-top: 0;'>     dein Task Manager</p>
 """, unsafe_allow_html=True)
 
-page = st.sidebar.selectbox("Navigation", [
-    "Task anlegen", "Task labeln", "Task löschen", "Task abhaken",
-    "Heutige anzeigen", "Alle anzeigen"
-])
+
 
 if page == "Task anlegen":
     st.header("✨ Neue Aufgabe anlegen ✨")
