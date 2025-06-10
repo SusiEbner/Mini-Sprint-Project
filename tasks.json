@@ -1,0 +1,14 @@
+{
+  "putzen": {
+    "Beschreibung": "putzen",
+    "Label": "Arbeit",
+    "F\u00e4lligkeitsdatum": "2025-06-10",
+    "done": false
+  },
+  "kochen": {
+    "Beschreibung": "kochen",
+    "Label": "Freizeit",
+    "F\u00e4lligkeitsdatum": "2025-06-12",
+    "done": false
+  }
+}
