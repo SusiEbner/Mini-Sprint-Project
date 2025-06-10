@@ -1,8 +1,14 @@
 {
   "kochen": {
     "Beschreibung": "kochen",
+    "Label": "Freizeit",
+    "F\u00e4lligkeitsdatum": "2025-06-10",
+    "done": true
+  },
+  "lernen": {
+    "Beschreibung": "lernen",
     "Label": "UNI",
-    "F\u00e4lligkeitsdatum": "2025-06-06",
-    "done": false
+    "F\u00e4lligkeitsdatum": "2025-06-10",
+    "done": true
   }
 }
