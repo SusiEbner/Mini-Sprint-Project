@@ -87,7 +87,11 @@ class TaskManager:
 task_manager = TaskManager()
 
 st.markdown("""
-<h1 style='font-size: 40px; margin-bottom: 0;'>Mission Possible</h1>
-<p style='font-size: 22px; color: gray; margin-top: 0;'>     dein Task Manager</p>
+<h1 style='font-size: 40px; margin-bottom: 0; text-align: center;'>
+    ✨ Mission Possible ✨
+</h1>
+<p style='font-size: 22px; color: gray; margin-top: 0; text-align: center;'>
+    Dein Task Manager
+</p>
 """, unsafe_allow_html=True)
 

@@ -1,12 +1,6 @@
 {
-  "einkaufen": {
-    "Beschreibung": "einkaufen",
-    "Label": "Freizeit",
-    "F\u00e4lligkeitsdatum": "2025-06-10",
-    "done": false
-  },
-  "Lernen": {
-    "Beschreibung": "Lernen",
+  "uni": {
+    "Beschreibung": "uni",
     "Label": "UNI",
     "F\u00e4lligkeitsdatum": "2025-06-10",
     "done": false
