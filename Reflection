@@ -1,8 +1,19 @@
-Wie hat uns SCRUM geholfen?
-SCRUM hat uns bislang nur in begrenztem Maße unterstützt, da wir die meisten Aufgaben gemeinsam und ohne klare Aufgabenteilung bearbeitet haben. Besonders hilfreich war jedoch der Product Backlog, der uns geholfen hat, den Überblick über unsere offenen Aufgaben und nächsten Schritte zu behalten.
-Wie hat uns SCRUM behindert?
-SCRUM hat uns in unserem Arbeitsprozess nicht wesentlich eingeschränkt. Da wir alle lokal an einem Ort zusammengearbeitet haben, konnten wir viele Absprachen direkt und informell treffen, ohne auf die formalen Elemente von SCRUM angewiesen zu sein.
-Wo stehen wir gerade?
-Aktuell haben wir ein Grundgerüst unseres Task Managers implementiert und führen diesen erfolgreich mit Streamlit aus. Die Basisfunktionen stehen und bieten bereits einen ersten Eindruck davon, wie die Anwendung später funktionieren soll.
-Was kommt als nächstens?
-Als nächstes konzentrieren wir uns darauf, unsere App weiter zu optimieren. Wir planen, eine Multipage-Struktur zu integrieren, um die Benutzerführung zu verbessern, und zusätzliche funktionale Anforderungen zu definieren, um den Nutzen und Funktionsumfang der Anwendung zu erweitern.
+1. Reflection
++ Wie hat uns SCRUM geholfen?
+  SCRUM hat uns bislang nur in begrenztem Maße unterstützt, da wir die meisten Aufgaben gemeinsam und ohne klare Aufgabenteilung bearbeitet haben. Besonders hilfreich war jedoch der Product Backlog, der uns geholfen hat, den Überblick über unsere offenen Aufgaben und nächsten Schritte zu behalten.
++ Wie hat uns SCRUM behindert?
+  SCRUM hat uns in unserem Arbeitsprozess nicht wesentlich eingeschränkt. Da wir alle lokal an einem Ort zusammengearbeitet haben, konnten wir viele Absprachen direkt und informell treffen, ohne auf die formalen Elemente von SCRUM angewiesen zu sein.
++ Wo stehen wir gerade?
+  Aktuell haben wir ein Grundgerüst unseres Task Managers implementiert und führen diesen erfolgreich mit Streamlit aus. Die Basisfunktionen stehen und bieten bereits einen ersten Eindruck davon, wie die Anwendung später funktionieren soll.
++ Was kommt als nächstens?
+  Als nächstes konzentrieren wir uns darauf, unsere App weiter zu optimieren. Wir planen, eine Multipage-Struktur zu integrieren, um die Benutzerführung zu verbessern, und zusätzliche funktionale Anforderungen zu definieren, um den Nutzen und Funktionsumfang der Anwendung zu erweitern.
+
+2. Reflection
++ Wie hat uns SCRUM geholfen? 
+  In diesen zwei Sprints haben wir uns mehr an SCRUM orientiert. Die Hälfte unseres Teams hatte jetzt einen eigenen Codespace in dem er/sie gearbeitet hat. Hin und wieder gab es Schwierigkeiten beim pushen und pullen, aber gmeinsam konnten wir diese Schwierigkeiten lösen.
++ Wie hat uns SCRUM behindert?
+  Außer den Problemen, die wir mit dem pushen und pullen hatten, hat alles gut funktioniert
++ Wo stehen wir gerade?
+  Wir haben versucht, die Aufgaben zu speichern, was nicht so gut funktioniert. Des Weiteren haben wir Checkboxen bei "Tasks abhacken" gecodet und diverse optische Feinheiten geändert und hinzugefügt. Zudem haben wir uns dafür entschieden die Seite "labeln" zu löschen.
++ Was kommt als nächstens?
+  In der nächsten Sprinteinheit wollen wir versuchen, dass man Aufgaben mit dem gleichen Namen anlegen und diese auch löschen kann.
