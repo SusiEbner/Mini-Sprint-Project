@@ -6,15 +6,19 @@ if "tasks" not in st.session_state:
 
 st.title("ToDo abhacken")
 
-if st.session_state['tasks']:
-    task_name = st.checkbox("Wähle eine Aufgabe zum Abhaken", list(st.session_state['tasks'].keys()), key="task_select")
+tasks = st.session_state.tasks
 
-    if st.button("Aufgabe abhaken"):
-        if task_name in st.session_state['tasks']:
-            st.session_state['tasks'][task_name]['done'] = True
-            save_tasks(st.session_state['tasks'])
-            st.success(f"✨ Aufgabe '{task_name}' wurde als erledigt markiert.")
-        else:
-            st.warning(f"Aufgabe '{task_name}' nicht gefunden!")
+open_tasks = {k: v for k, v in tasks.items() if not v.get("done", False)}
+
+if open_tasks:
+   for title, task in open_tasks.items():
+
+    checked = st.checkbox(title, value=False, key=title)
+
+    if checked:
+        tasks[title]["done"] = True
+        save_tasks(tasks)
+        st.rerun()
+
 else:
-    st.info("Keine Aufgaben vorhanden.")
+    st.info("🎉 Keine offenen Aufgaben mehr.")
