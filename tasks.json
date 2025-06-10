@@ -1,19 +1,8 @@
 {
-<<<<<<< HEAD
-  "uni": {
-    "Beschreibung": "uni",
-=======
-  "einkaufen": {
-    "Beschreibung": "einkaufen",
+  "kochen": {
+    "Beschreibung": "kochen",
     "Label": "Freizeit",
     "F\u00e4lligkeitsdatum": "2025-06-10",
-    "done": true
-  },
-  "Lernen": {
-    "Beschreibung": "Lernen",
->>>>>>> 1eed2c9 (update 8)
-    "Label": "UNI",
-    "F\u00e4lligkeitsdatum": "2025-06-10",
-    "done": true
+    "done": false
   }
 }
