@@ -5,6 +5,7 @@ class TaskManager:
     def __init__(self):
         if "tasks" not in st.session_state:
             st.session_state.tasks = {}
+            # session state is used to persist tasks across interactions
 
     def add_task(self, title, due_date, label):
         st.session_state.tasks[title] = {"date": due_date, "label": label, "done": False}
@@ -86,49 +87,14 @@ class TaskManager:
 task_manager = TaskManager()
 
 st.markdown("""
-<h1 style='font-size: 40px; margin-bottom: 0;'>Mission Possible</h1>
-<p style='font-size: 22px; color: gray; margin-top: 0;'>     dein Task Manager</p>
+<h1 style='font-size: 40px; margin-bottom: 0; text-align: center;'>
+    ✨ Mission Possible ✨
+</h1>
+<p style='font-size: 22px; color: gray; margin-top: 0; text-align: center;'>
+    Dein Task Manager
+</p>
+<p style='font-size: 16px; color: gray; margin-top: 4px; text-align: center;'>
+    Links kannst du zwischen verschiedenen Funktionen wählen, um deine Tasks zu verwalten.
+</p>
 """, unsafe_allow_html=True)
-
-page = st.sidebar.selectbox("Navigation", [
-    "Task anlegen", "Task labeln", "Task löschen", "Task abhaken",
-    "Heutige anzeigen", "Alle anzeigen"
-])
-
-if page == "Task anlegen":
-    st.header("✨ Neue Aufgabe anlegen ✨")
-    title = st.text_input("Titel der Aufgabe")
-    due_date = st.date_input("Fälligkeitsdatum")
-    label = st.selectbox("Kategorie", ["Arbeit", "Uni", "Freizeit", "Sonstiges"])
-    if st.button("Hinzufügen"):
-        if title:
-            task_manager.add_task(title, str(due_date), label)
-        else:
-            st.warning("Bitte gib einen Titel ein.")
-
-elif page == "Task labeln":
-    st.header("Aufgabe labeln")
-    title = st.text_input("Titel der Aufgabe")
-    new_label = st.selectbox("Neues Label", ["Arbeit", "Uni", "Freizeit", "Sonstiges"])
-    if st.button("Label aktualisieren"):
-        task_manager.label_task(title, new_label)
-
-elif page == "Task löschen":
-    st.header("🗑 Aufgabe löschen")
-    title = st.text_input("Titel der Aufgabe")
-    if st.button("Löschen"):
-        task_manager.delete_task(title)
-
-elif page == "Task abhaken":
-    st.header("✅ Aufgabe als erledigt markieren")
-    title = st.text_input("Titel der Aufgabe")
-    if st.button("Als erledigt markieren"):
-        task_manager.mark_done(title)
-
-elif page == "Heutige anzeigen":
-    task_manager.show_today_tasks()
-
-elif page == "Alle anzeigen":
-    task_manager.show_all_tasks()
-
 
